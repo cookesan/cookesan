@@ -3,16 +3,23 @@
 I build small open-source tools around setup docs, CI, and first-run
 reliability.
 
-Current project:
-[SetupProof](https://github.com/setupproof/setupproof), a CLI and GitHub
-Action that tests explicitly marked README quickstarts from a clean workspace.
+Current focus:
+
+- [SetupProof](https://github.com/setupproof/setupproof), a CLI and GitHub
+  Action that tests explicitly marked README quickstarts from a clean
+  workspace.
+- GitHub Advisory Database metadata cleanup: small, reviewable fixes for
+  package versions, references, and vulnerability record quality.
+- Maintainer-friendly docs and CI changes that are easy to audit.
 
 ```sh
-go install github.com/setupproof/setupproof/cmd/setupproof@v0.1.0
+go install github.com/setupproof/setupproof/cmd/setupproof@v0.1.3
 ```
 
 Recent open-source work:
 
+- [setupproof/setupproof#56](https://github.com/setupproof/setupproof/pull/56):
+  verified native Windows workspace and report compatibility.
 - [nodejs/node#63003](https://github.com/nodejs/node/pull/63003): exposed
   writable stream state on HTTP/2 compatibility responses.
 - [diesel-rs/diesel#5044](https://github.com/diesel-rs/diesel/pull/5044):
