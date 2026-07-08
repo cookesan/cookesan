@@ -10,7 +10,22 @@ Current focus:
   workspace.
 - GitHub Advisory Database metadata cleanup: small, reviewable fixes for
   package versions, references, and vulnerability record quality.
-- Maintainer-friendly docs and CI changes that are easy to audit.
+- Maintainer-friendly docs, CI, and release-readiness changes that are easy to
+  audit.
+
+Focus lanes:
+
+- Setup docs and first-run reliability.
+- Security advisory metadata quality.
+- Small upstream fixes with low review overhead.
+- CI and release checks that catch user-facing regressions.
+
+Contribution style:
+
+- Keep changes narrow, tested, and reversible.
+- Prefer primary sources and reproducible checks.
+- Make public commands copyable from a clean checkout.
+- Avoid comment churn unless there is actionable maintainer feedback.
 
 ```sh
 go install github.com/setupproof/setupproof/cmd/setupproof@v0.1.3
@@ -18,6 +33,8 @@ go install github.com/setupproof/setupproof/cmd/setupproof@v0.1.3
 
 Recent open-source work:
 
+- [github/advisory-database pull requests](https://github.com/github/advisory-database/pulls?q=is%3Apr+author%3Acookesan):
+  reference and package-metadata improvements for reviewed advisories.
 - [setupproof/setupproof#56](https://github.com/setupproof/setupproof/pull/56):
   verified native Windows workspace and report compatibility.
 - [nodejs/node#63003](https://github.com/nodejs/node/pull/63003): exposed
